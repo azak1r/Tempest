@@ -14,9 +14,9 @@ ActiveRecord::Schema.define(version: 2019_03_22_175938) do
 
   create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
     t.string "title"
-    t.string "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
